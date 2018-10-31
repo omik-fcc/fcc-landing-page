@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.7.2-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/mod.css">
+  <title>FCC - Product Landing Page</title>
+</head>
+
+<!--
+TODO: 
+  - OPTIMIZE IMAGES TO WEB (make em lighter!) **DONE
+  - HOST THE VIDEO IN A PLATFORM (vimeo / youtube) **DONE
+
+VALIDATION FIXES:
+  - My product landing page should have at least one media query.
+  - My product landing page should utilize CSS flexbox at least once.
+
+  As I'm using BULMA, a responsive CSS Framework built with Flexbox all those
+  things are made internally. 
+-->
+
+<body>
+
+  <!-- HEADER ZONE -->
+  <section id="header" class="">
+
+    <!-- NAV BAR -->
+    <nav id="nav-bar" class="navbar is-transparent is-fixed-top has-shadow">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="assets/images/logo-dark.png" alt="Logo">
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="nav-link navbar-item is-active" href="#header">
+              Home
+            </a>
+            <a class="nav-link navbar-item" href="#about">
+              About
+            </a>
+            <a class="nav-link navbar-item" href="#testimonials">
+              Testimonials
+            </a>
+            <a class="nav-link navbar-item" href="#get-notified">
+              Register
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO ZONE (HEADER) -->
+    <section id="header" class="hero is-primary is-large">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <!-- 
+            FIX FOR VALIDATION: needs to be a complete URL or directory. Original: 
+            <img src="assets/images/logo.png" id="header-img" alt="Acme Placeholder Logo"> 
+        -->
+          <img src="https://i.imgur.com/pH8xOQg.png" id="header-img" alt="Acme Placeholder Logo">
+          <h1 class="title is-2">
+            Just a Placeholder claim
+          </h1>
+          <p class="subtitle">
+            A placeholder subtitle is always fancy.
+          </p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ABOUT ZONE -->
+  <section id="about" class="section">
+    <div class="container has-text-centered">
+
+      <h1 class="title">Check about our specs</h1>
+
+      <div class="columns is-multiline">
+
+        <div class="column is-one-third">
+          <article class="notification media has-background-white">
+            <figure class="media-left">
+              <span class="icon">
+                <i class="has-text-info fas fa-cogs fa-lg"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title is-size-5">Easy installation</h1>
+                <p class="is-size-6 subtitle">
+                  Shank <strong>meatloaf</strong> buffalo irure. Et biltong labore adipisicing, pariatur incididunt
+                  officia beef ut tempor.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-one-third">
+          <article class="notification media has-background-white">
+            <figure class="media-left">
+              <span class="icon">
+                <i class="has-text-warning fa fa-external-link-alt fa-lg"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title is-size-5">Fast deployment</h1>
+                <p class="is-size-6 subtitle">
+                  Anim <strong>t-bone</strong> jerky shankle dolor nostrud chuck doner sausage shoulder et id.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-one-third">
+          <article class="notification media has-background-white">
+            <figure class="media-left">
+              <span class="icon">
+                <i class="has-text-success fa fa-money-check-alt fa-lg"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title is-size-5">Not that expensive</h1>
+                <p class="is-size-6 subtitle">
+                  Non <strong>belly beef</strong> pork occaecat reprehenderit, proident picanha brisket dolore. Enim
+                  turkey salami eiusmod ground round.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <div class="columns is-multiline is-vcentered">
+
+        <div class="column is-half">
+          <h1 class="title is-size-4">Placeholder for further explanations</h1>
+          <p class="is-size-6  has-text-left">
+            Tongue <strong>pancetta</strong> meatball, corned beef ribeye kevin spare ribs ham flank. Kielbasa pork
+            chop beef, cupim meatloaf ground round porchetta. Swine pork chop shankle, tail ribeye porchetta jowl spare
+            ribs venison doner pork belly brisket. Corned beef hamburger sirloin jowl ribeye ground round jerky filet
+            mignon pastrami swine capicola tail pork.
+          </p>
+
+        </div>
+
+        <div class="column is-half">
+          <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/O5bMsunilQQ?modestbranding=1 "
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS ZONE -->
+  <section id="testimonials" class="section is-testimonials has-background-dark">
+    <div class="container has-text-centered">
+      <h1 class="title is-italic is-4 has-text-white-ter">
+        "Thanks to acme co, we've just launched our 5th website! The best on the net! Thanks guys, keep up the good
+        work! Not able to tell you how happy I am with acme co."
+      </h1>
+      <p class="subtitle has-text-white-ter">
+        - Charmaine M.
+      </p>
+    </div>
+  </section>
+
+  <!-- REGISTER ZONE -->
+  <section id="get-notified" class="section ">
+    <div class="container has-text-centered">
+      <h1 class="title">we are almost here!</h1>
+      <p class="is-3">
+        Get notified when <strong>acme co</strong> opens:
+      </p>
+      <div class="column is-4 is-offset-4">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+          <div class="field is-grouped">
+            <p class="control is-expanded">
+              <input id="email" class="input" type="email" name="email" placeholder="somehuman@notAcat.org" required />
+            </p>
+            <p class="control">
+              <input id="submit" type="submit" value="Notify Me" class="button is-info"></input>
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER ZONE -->
+  <footer class="footer is-small">
+    <div class="content has-text-centered">
+      <p>
+        <strong>acme co</strong>. A Landing Page project for FreeCodeCamp by <a href="https://omik.github.io" target="_blank">Jesús
+          Muñoz</a>. <br> The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+        The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC
+          BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
